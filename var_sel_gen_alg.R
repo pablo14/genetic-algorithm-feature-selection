@@ -54,3 +54,6 @@ best_vars_ga=col_names[ga_GA_1@solution[1,]==1]
 
 # Checking the variables of the best solution...
 best_vars_ga
+
+# Checking the accuracy
+get_accuracy_metric(data_tr_sample = data_x, target = data_y, best_vars_ga)
