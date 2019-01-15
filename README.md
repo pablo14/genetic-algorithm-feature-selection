@@ -8,4 +8,6 @@ You can find a gentle explanation of GA at [Feature Selection using Genetic Algo
 
 Feel free to share your insights, have fun!
 
+[Twitter](https://twitter.com/pabloc_ds)
+
 ![](https://blog.datascienceheroes.com/content/images/2019/01/evolutionary_algortihm.gif)
