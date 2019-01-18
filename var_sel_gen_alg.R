@@ -5,12 +5,18 @@
 ## Contact: https://twitter.com/pabloc_ds
 ####################################################################
 
+# Install packages if missing
+list.of.packages <- c("caret", "randomForest", "funModeling", "tidyverse", "GA")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Load libraries
 library(caret)
 library(randomForest)
-source("lib_ga.R")
 library(funModeling)
 library(tidyverse)
 library(GA)
+source("lib_ga.R")
 
 data=read_delim("data_breast_cancer2.csv", delim = ",")  
 
@@ -32,7 +38,7 @@ ga_GA_1 = ga(fitness = function(vars) custom_fitness(vars = vars,
                                                      p_sampling = 0.7), # custom fitness function
              type = "binary", # optimization data type
              crossover=gabin_uCrossover,  # cross-over method
-             elitism = 0.1, # elitism prob
+             elitism = 3, # number of best ind. to pass to next iteration
              pmutation = 0.03, # mutation rate prob
              popSize = 50, # the number of indivduals/solutions
              nBits = param_nBits, # total number of variables
