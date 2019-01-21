@@ -4,7 +4,7 @@ This script select the 'best' subset of variables based on genetic algorithms in
 
 It uses a custom fitness function for binary-class classification. Please modify it to use in other scenarios.
 
-You can find a gentle explanation of GA at [Feature Selection using Genetic Algorithms in R](https://blog.datascienceheroes.com/feature-selection-using-genetic-algorithms-in-r/)
+This sctipt is realated to the blog post: [Feature Selection using Genetic Algorithms in R](https://blog.datascienceheroes.com/feature-selection-using-genetic-algorithms-in-r/).
 
 # How to run the example? 
 
