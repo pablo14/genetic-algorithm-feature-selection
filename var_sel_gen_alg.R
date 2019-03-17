@@ -6,7 +6,7 @@
 ####################################################################
 
 # Install packages if missing
-list.of.packages <- c("caret", "randomForest", "funModeling", "tidyverse", "GA")
+list.of.packages <- c("parallel", "doParallel", "caret", "randomForest", "funModeling", "tidyverse", "GA")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
